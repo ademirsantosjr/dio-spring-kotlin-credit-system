@@ -2,7 +2,12 @@ spring:
   datasource:
     url: jdbc:h2:mem:credit_app_system_db
     username: user
-    password: user123
+  jpa:
+    show-sql: true
+    hibernate:
+      properties:
+        hibernate.format_sql: true
+#      ddl-auto: create-drop
   h2:
     console:
       enabled: true

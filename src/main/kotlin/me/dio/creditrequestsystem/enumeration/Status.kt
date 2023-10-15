@@ -1,4 +1,4 @@
-package me.dio.creditrequestsystem
+package me.dio.creditrequestsystem.enumeration
 
 enum class Status {
     IN_PROGRESS, APPROVED, REJECTED
