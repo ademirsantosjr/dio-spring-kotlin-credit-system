@@ -13,6 +13,6 @@ spring:
       settings:
         trace: false
         web-allow-others: false
-springdoc:
+spring-doc:
   swagger-ui:
     path: /swagger-ui.html

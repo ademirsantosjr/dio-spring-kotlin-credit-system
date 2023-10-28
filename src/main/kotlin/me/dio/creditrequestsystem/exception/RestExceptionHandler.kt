@@ -24,7 +24,7 @@ class RestExceptionHandler {
         }
         return ResponseEntity(
                 ExceptionDetails(
-                        title = "Bad Request. Consult the documentation.",
+                        title = "Bad Request! Consult the documentation.",
                         timestamp = LocalDateTime.now(),
                         status = HttpStatus.BAD_REQUEST.value(),
                         exception = ex.javaClass.toString(),
@@ -52,7 +52,7 @@ class RestExceptionHandler {
     fun handle(ex: BusinessException): ResponseEntity<ExceptionDetails> {
         return ResponseEntity(
                 ExceptionDetails(
-                        title = "Bad Request. Consult the documentation.",
+                        title = "Bad Request! Consult the documentation.",
                         timestamp = LocalDateTime.now(),
                         status = HttpStatus.BAD_REQUEST.value(),
                         exception = ex.javaClass.toString(),
@@ -66,7 +66,7 @@ class RestExceptionHandler {
     fun handle(ex: IllegalArgumentException): ResponseEntity<ExceptionDetails> {
         return ResponseEntity(
                 ExceptionDetails(
-                        title = "Bad Request. Consult the documentation.",
+                        title = "Bad Request! Consult the documentation.",
                         timestamp = LocalDateTime.now(),
                         status = HttpStatus.BAD_REQUEST.value(),
                         exception = ex.javaClass.toString(),
